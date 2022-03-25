@@ -15,7 +15,7 @@ public class Var_05 {
 		System.out.println(intNum2);
 		System.out.println(intSum);
 		
-		// ln(NweLine)
+		// ln(NewLine)
 		// Line Feed
 		System.out.print(intNum1);
 		System.out.print(" + ");
