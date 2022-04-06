@@ -1,6 +1,6 @@
 package com.callor.controller.op;
 
-public class CasCading_01 {
+public class CastingEx01 {
 
 	public static void main(String[] args) {
 		
@@ -13,7 +13,7 @@ public class CasCading_01 {
 		 *  크기(저장공간) 작은 type의 변수에
 		 *  크기가 큰 type의 변수 값을 복사 대입하는 경우
 		 *  값을 잃을 수 있다
-		 *  하지만 대입하고자 한다면 "강제 현 변환(CasCasding)"을 수행해야한다
+		 *  하지만 대입하고자 한다면 "강제 현 변환(Casting)"을 수행해야한다
 		 *  강제 형 변환을 수행했을때 예측할 수 없는 결과가 나올수 있고
 		 *  그 책임은 온전히 개발자에게 있다
 		 */
