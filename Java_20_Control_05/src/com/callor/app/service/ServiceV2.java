@@ -5,7 +5,7 @@ public class ServiceV2 {
 	/*
 	 * 지금 serviceV2 클래스에는 guguDan()가 두번 선언되어 있다
 	 * 보통은 같은 이름의 method를 두번 이상 선언하면 오류가 발생한다
-	 * 그런데 자바에서는 method에 매개변수(argement)의 유무에 따라
+	 * 그런데 자바에서는 method에 매개변수(argument)의 유무에 따라
 	 * 이름은 같으나 서로 다른 method로 판단하여 오류가 발생하지 않는다
 	 * 이것은 자바뿐만 아니라 객체지향 프로그래밍 언어 공통의 특징이다
 	 * 
