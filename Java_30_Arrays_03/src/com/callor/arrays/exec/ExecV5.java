@@ -6,6 +6,6 @@ public class ExecV5 {
 		for(int i = 0 ; i <100 ; i++) {
 			intSum += (i + 1);
 		}
-		System.out.println("1ºÎÅÍ 100±îÁöÀÇ ÇÕ : " +intSum);
+		System.out.println("ì§ìˆ˜ì˜ í•©ê³„" +intSum);
 	}
 }

@@ -8,7 +8,7 @@ public class ExecV3 {
 		for (int i = 0; i < intNum.length; i++) {
 			intNum[i] = (int) (Math.random() * 100) + 1;
 		}
-		//Â¦¼öÀÇ °³¼ö¸¦ ¼¼¾î¼­ ÀúÀåÇÒ º¯¼ö
+		//ì§ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì„¸ì–´ì„œ ì €ìž¥í•  ë³€ìˆ˜
 		int intEvenCount = 0;
 		for (int i = 0; i < intNum.length; i++) {
 			boolean bEven = (intNum[i] % 2) == 0;
@@ -16,7 +16,7 @@ public class ExecV3 {
 				intEvenCount++;
 			} 
 		}
-		System.out.println("Â¦¼öÀÇ °³¼ö : " + intEvenCount);
+		System.out.println("ì§ìˆ˜ì˜ ê°œìˆ˜ : " + intEvenCount);
 
 	}
 

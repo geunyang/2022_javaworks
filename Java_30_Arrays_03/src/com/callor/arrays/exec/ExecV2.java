@@ -6,9 +6,9 @@ public class ExecV2 {
 
 		int[] intNum = new int[100];
 		int i = 0;
-		// for () ¸í·É¹®ÀÇ ¼±¾ðºÎ¿¡¼­ º¯¼ö¸¦ ¼±¾ðÇÏ¸é
-		// for () {}ÀÌ ³¡³¯¶§ º¯¼ö°¡ ¼Ò¸êµÈ´Ù
-		// °°Àº method ³»¿¡¼­ °°Àº ÀÌ¸§ÀÇ º¯¼ö¸¦ °è¼Ó »ç¿ëÇÒ ¼ö ÀÖ´Ù
+		// for () ëª…ë ¹ë¬¸ì˜ ì„ ì–¸ë¶€ì—ì„œ ë³€ìˆ˜ë¥¼ ì„ ì–¸í•˜ë©´
+		// for () {}ì´ ëë‚ ë•Œ ë³€ìˆ˜ê°€ ì†Œë©¸ëœë‹¤
+		// ê°™ì€ method ë‚´ì—ì„œ ê°™ì€ ì´ë¦„ì˜ ë³€ìˆ˜ë¥¼ ê³„ì† ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤
 		for (i = 0; i < intNum.length; i++) {
 			intNum[i] = (int) (Math.random() * 100) + 1;
 		}
@@ -17,9 +17,9 @@ public class ExecV2 {
 			boolean bEven = (intNum[i] % 2) == 0;
 			System.out.print(intNum[i]);
 			if(bEven) {
-				System.out.println("´Â(Àº) Â¦¼öÀÌ´Ù.");
+				System.out.println("ì€(ëŠ”) ì§ìˆ˜ì´ë‹¤");
 			} else {
-				System.out.println("´Â(Àº) Â¦¼ö°¡ ¾Æ´Ï´Ù.");
+				System.out.println("ì€(ëŠ”) ì§ìˆ˜ê°€ ì•„ë‹ˆë‹¤");
 			}
 		}
 

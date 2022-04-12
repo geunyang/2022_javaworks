@@ -15,15 +15,15 @@ public class ExecV1 {
 		intNum = (int)(Math.random() * 100) +1;
 		boolean bEven = false;
 		
-		// intNum º¯¼ö¸¦ 2·Î ³ª´« ³ª¸ÓÁö°¡ 0ÀÎ°¡
-		// intNum º¯¼ö¿¡ ´ã±ä °ªÀ» 2·Î ³ª´« ³ª¸ÓÁö°¡ 0ÀÎ°¡
-		// 0ÀÌ¸é true°¡ bEven¿¡ ÀúÀå, ¾Æ´Ï¸é false°¡ bEven¿¡ ÀúÀå
+		// intNum ë³€ìˆ˜ë¥¼ 2ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ê°€ 0ì¸ê°€
+		// intNum ë³€ìˆ˜ì— ë‹´ê¸´ ê°’ì„ 2ë¡œ ë‚˜ëˆˆ ë‚˜ë¨¸ì§€ê°€ 0ì¸ê°€
+		// 0ì´ë©´ trueê°€ bEvenì— ì €ì¥, ì•„ë‹ˆë©´ falseê°€ bEvenì— ì €ì¥
 		bEven = (intNum % 2) == 0;
 		
 		if(bEven) {
-			System.out.println(intNum + "´Â(Àº) Â¦¼ö");
+			System.out.println(intNum + "ëŠ”(ì€) ì§ìˆ˜");
 		} else {
-			System.out.println(intNum + "´Â(Àº) Â¦¼ö°¡ ¾Æ´Ô");
+			System.out.println(intNum + "ëŠ”(ì€) ì§ìˆ˜ê°€ ì•„ë‹˜");
 		}
 		
 	}

@@ -8,7 +8,7 @@ public class ExecV6 {
 		}
 		int intEvenCount = 0;
 		System.out.println("==================================");
-		System.out.println("Â¦¼ö ¸®½ºÆ®");
+		System.out.println("ì§ìˆ˜ ë¦¬ìŠ¤íŠ¸");
 		System.out.println("----------------------------------");
 		for (int i = 0; i < intNums.length; i++) {
 			boolean bEven = (intNums[i] % 2) == 0;
