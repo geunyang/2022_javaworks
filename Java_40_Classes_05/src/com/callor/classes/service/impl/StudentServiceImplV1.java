@@ -10,7 +10,7 @@ import com.callor.score.domain.StudentVO;
 
 public class StudentServiceImplV1 implements StudentService {
 
-	private StudentVO[] stVO;
+	private StudentVO[] stList;
 	private String stFile;
 
 //	private StudentServiceImplV1() {
@@ -18,9 +18,9 @@ public class StudentServiceImplV1 implements StudentService {
 	// 파일 이름을 쓰지 않고 argument로 받는 이유 중요
 	public StudentServiceImplV1(String stFile, int length) {
 		this.stFile = stFile;
-		this.stVO = new StudentVO[length];
-		for (int i = 0; i < this.stVO.length; i++) {
-			this.stVO[i] = new StudentVO();
+		this.stList = new StudentVO[length];
+		for (int i = 0; i < this.stList.length; i++) {
+			this.stList[i] = new StudentVO();
 		}
 
 	}
@@ -38,9 +38,8 @@ public class StudentServiceImplV1 implements StudentService {
 			System.out.println(stFile + "파일을 찾을 수 없습니다.");
 			return;
 		}
-		// 내용 유무 확인 후 없으면 멈춤
 		Scanner scan = new Scanner(is);
-		/*
+		/* 내용 유무 확인 후 없으면 멈춤
 		while(true) {
 			boolean bYes = scan.hasNext();
 			if(bYes == false) {
@@ -52,6 +51,7 @@ public class StudentServiceImplV1 implements StudentService {
 		}
  		*/
 		// 내용이 있으면 콘솔에 한줄씩 출력
+		int index = 0; //stList에 들어갈 값을 저장
 		while(scan.hasNext()) {
 			String stLine = scan.nextLine();
 			System.out.println(stLine);
@@ -70,9 +70,23 @@ public class StudentServiceImplV1 implements StudentService {
 			stVO.setStDept(stInfos[4]);
 			stVO.setStAddr(stInfos[5]);
 			
-		}
+			stList[index++] = stVO;
+			
+		} // end while 여기를 지나면 stList에 모든 데이터가 담겨 있을 것이다
 		
-
+		this.printStudents();
+		
+	} // end loadStudent
+	
+	// v1 에서 stList에 담긴 데이터들을 확인하기 위하여
+	// 내부용으로 만든 method
+	private void printStudents() {
+		for (int i = 0; i < stList.length; i ++) {
+			System.out.println(stList[i].toString());
+		}
+		for (StudentVO vo : stList) {
+			System.out.println(vo.toString());
+		}
 	}
 
 	@Override
