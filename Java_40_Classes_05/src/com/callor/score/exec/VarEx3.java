@@ -16,7 +16,7 @@ public class VarEx3 {
 		boolean bYes;
 		char char1;
 
-		// class type
+		// class type 의 변수 선언문
 		// 기본형 변수들을 감싸고 있는 class
 		// wrapper 클래스
 		Integer num11;
