@@ -1,4 +1,4 @@
-package com.callor.app.exec;
+package com.callor.app.primes;
 
 public class Exec7 {
 
@@ -9,6 +9,7 @@ public class Exec7 {
 			intNums[i] = (int) (Math.random() * 100) + 2;
 		}
 		for (int i = 0; i < intNums.length; i++) {
+			
 			boolean bPrime = true;
 			for (int j = 2; j * j < intNums.length; j++) {
 				if (intNums[i] % j == 0)
@@ -16,6 +17,7 @@ public class Exec7 {
 			}
 			if (bPrime)
 				count++;
+			System.out.println(intNums[i]);
 		}
 		System.out.println("소수의 개수 : " + count);
 
