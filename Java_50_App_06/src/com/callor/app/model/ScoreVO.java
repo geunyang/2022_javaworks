@@ -25,7 +25,7 @@ public class ScoreVO {
 	
 	private int intSum;
 	private float fAvg;
-	
+	 
 	private int intRank;
 
 	public int getIntStNum() {
