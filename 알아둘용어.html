@@ -360,6 +360,19 @@
         인터페이스에 정의된 모든 메서드를 반드시 구현해야 한다<br />
         7. 클래스의 다형성을 가능하게 하여 코드간 결합도를 낮출 수 있다
       </li>
+      <li>
+        <h3>Data 가 포함된 Java 프로젝트</h3>
+        1. Data 추상화 : 사용할 Data 중 필요한 항목이 무엇인지 파악한다<br />
+        2. VO(Value object) 클래스 작성 : 추상화 된 데이터를 기준으로 VO
+        클래스를 작성한다<br />
+        3. Service 클래스 작성<br />
+        1) Data 생성 method<br />
+        2) 생성된 Data 확인 method<br />
+        3) 생성된 Data 에 대한 연산 method<br />
+        4. Controller 클래스 작성<br />
+        1) main() method 를 작성하고 Service 클래스와 연결<br />
+        2) Data 생성, Data 확인, 연산 후 Data 확인, 최종 결과 출력 확인
+      </li>
     </ul>
   </body>
 </html>
