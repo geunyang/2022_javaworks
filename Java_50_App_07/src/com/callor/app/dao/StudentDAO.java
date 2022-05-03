@@ -52,9 +52,12 @@ public class StudentDAO {
 								.stName(rSet.getString("st_name"))
 								.stTel(rSet.getString("st_tel"))
 								.build();
+			stList.add(stVO2);
 			
 			
 		}
+		
+		return stList;
 		
 		
 	}
