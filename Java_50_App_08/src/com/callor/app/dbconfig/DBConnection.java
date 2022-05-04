@@ -14,7 +14,7 @@ public class DBConnection {
 		
 		try {
 			conn = DriverManager.getConnection(url,username,password);
-			System.out.println("DB Connection OK");
+			System.out.println("DB Connection COMPLETE");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
