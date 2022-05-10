@@ -14,7 +14,7 @@ public class ScoreServiceImplV4 extends ScoreServiceImplV3 {
 
 	@Override
 	public void saveScore() {
-		// 선언과 생성분리 trycatch 위해
+		// 선언과 생성분리 try catch 위해
 		FileWriter fileWriter = null;
 		PrintWriter print = null;
 		try {
