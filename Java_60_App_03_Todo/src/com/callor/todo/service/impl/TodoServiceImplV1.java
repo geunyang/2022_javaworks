@@ -1,6 +1,8 @@
 package com.callor.todo.service.impl;
 
+import java.sql.SQLTimeoutException;
 import java.text.SimpleDateFormat;
+import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -85,6 +87,26 @@ public class TodoServiceImplV1 implements TodoService {
 	@Override
 	public void saveTodo(String fileName) {
 		// TODO Auto-generated method stub
+		
+	}
+	/*
+	 * todo 완료하기 숙제
+	 * 매개변수로 전달받은 num 값은 List 요소의 실제 값보다 1 만큼 크다
+	 * num 값이 4 라면 실제로는 3번 요소를 선택한 것이다
+	 * 선택한 요소의 edate, etime 부분을 현재 시스템의 날짜와 시간을 사용하여문자열로 바꾼다음
+	 * setting
+	 */
+	@Override
+	public void compTodo(Integer num) {
+		Date curDate = new Date(System.currentTimeMillis());
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss");
+		
+		String today = dateFormat.format(curDate);
+		String time = timeFormat.format(curDate);
+		
+		TodoVO tVO = TodoVO.builder().tKey().eDate(today).tContent(content).eTime(time).build();
+		todoList.add(tVO); 
 		
 	}
 	
