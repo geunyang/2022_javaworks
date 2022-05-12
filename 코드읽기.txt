@@ -1,0 +1,26 @@
+	@Override
+	public void compTodo(Integer num) {
+		if(todoList.get(num - 1).getEDate() == null || todoList.get(num - 1).getEDate().isEmpty()) {
+		Date curDate = new Date(System.currentTimeMillis());
+		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat timeFormat = new SimpleDateFormat("hh:mm:ss");
+
+		String today = dateFormat.format(curDate);
+		String time = timeFormat.format(curDate);
+
+		todoList.get(num - 1).setEDate(today);
+		todoList.get(num - 1).setETime(time);
+		} else {
+			todoList.get(num - 1).setEDate(null);
+			todoList.get(num - 1).setETime(null);
+		}
+		
+	}
+	
+
+todoList에 입력된 값에서 1을 뺀 수에 해당하는 순서의 List 날짜값이 null 이거나 비어있다면
+Date curDate 에 현재 날짜와 시간을 넣고
+String today와 String time으로 문자열로 바꾼 다음
+그 값을 eDate와 eTime에 setting 해 todoList에 입력된 데이터의 완료 날짜와 시간을 채운다
+또 todoList에 다시 값이 입력되면 eDate와 eTime에 null을 넣어 데이터 완료 날짜와 시간을 지운다
+이후 console에 출력되는 TodoList의 값이 false로 바뀐다

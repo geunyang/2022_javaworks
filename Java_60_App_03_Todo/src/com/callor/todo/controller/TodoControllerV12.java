@@ -48,6 +48,7 @@ public class TodoControllerV12 {
 				}
 				if(num == -1) return;
 				toService.compTodo(num);
+				printTodo(todoList);
 				}
 			}
 
