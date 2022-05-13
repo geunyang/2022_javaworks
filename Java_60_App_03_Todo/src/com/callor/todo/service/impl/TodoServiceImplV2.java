@@ -86,6 +86,32 @@ public class TodoServiceImplV2 extends TodoServiceImplV1 {
 			e.printStackTrace();
 		}
 		scan.close();
-	}
+	} // end loadtodo
 	
+	
+	// 변경할 컨텐츠까지 같이 받아야
+	@Override
+	public void update(Integer num, String content) {
+		
+		int index = num -1;
+		
+		TodoVO tVO;
+		try {
+			tVO = todoList.get(index);
+		} catch (Exception e) {
+			System.out.println("선택한 항목이 리스트에 없습니다");
+			return;
+		}
+		// 할일변경
+		tVO.setTContent(content);
+		// update 후에 변경한 내용을 강제로 자동저장
+		try {
+			// 원래는 saveTodo가 파일이름 매개변수로 받아야 하는데 파일이름을 공통 사용해서 대신 null 값 넘김
+			this.saveTodo(null);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 }

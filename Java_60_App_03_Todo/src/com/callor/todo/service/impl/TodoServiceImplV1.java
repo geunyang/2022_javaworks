@@ -91,7 +91,6 @@ public class TodoServiceImplV1 implements TodoService {
 		
 	}
 
-	@Override
 	public void update(TodoVO tVO) {
 		// TODO Auto-generated method stub
 		
@@ -183,6 +182,12 @@ public class TodoServiceImplV1 implements TodoService {
 			System.out.println("TODO List 데이터 범위를 벗어났습니다");
 			
 		}
+	}
+
+	@Override
+	public void update(Integer num, String content) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

@@ -450,6 +450,22 @@
         StudentVO stVO = new StudentVO();<br />
         Service service = new ServiceImpl();
       </li>
+      <li>
+        <h3>PRIMARY KEY</h3>
+        1. 기본키(PK)를 설정하여 데이터 조작에 유일한 절대성을 부여하는것<br />
+        2. 한 레코드의 데이터를 수정, 삭제하여도 다른 레코드에 영향을 미치지
+        않는다. 이를 무결성 유지라고 한다<br />
+        3. 기본키의 값은 유일(unique) 해야하며 NOT NULL 성질을 갖는다<br />
+        4. 자동으로 unique index 가 설정된다<br />
+        5. 한개의 table 에 1개만 존재한다
+      </li>
+      <li>
+        IoC(Inversion of Control, 제어의 역전) Dependency 의존관계란 무엇인가?
+        “A가 B를 의존한다.”는 표현은 어떤 의미일까? 추상적인 표현이지만, 토비의
+        스프링에서는 다음과 같이 정의한다. 의존대상 B가 변하면, 그것이 A에
+        영향을 미친다. - 이일민, 토비의 스프링 3.1, 에이콘(2012), p113 즉, B의
+        기능이 추가 또는 변경되거나 형식이 바뀌면 그 영향이 A에 미친다.
+      </li>
     </ul>
   </body>
 </html>
