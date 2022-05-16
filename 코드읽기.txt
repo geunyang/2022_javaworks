@@ -48,3 +48,36 @@ String today와 String time으로 문자열로 바꾼 다음
 mainMenu 3번을 선택하면
 todoList에 todo 목록을 모두 가져와서
 print 하고
+
+
+package com.callor.app.exec;
+
+public class Exec06 {
+	public static void main(String[] args) {
+		int[] nums = new int[100];
+		for(int i = 0; i < nums.length; i ++) {
+			nums[i] = (int)(Math.random() * 91) + 10;	
+		}
+		for(int j = 0; j < nums.length; j ++) {
+			int index = 0;
+			boolean pFlag = true;
+			for(index = 2; index < nums[j]; index++) {
+				pFlag = true;
+				if(nums[j] % index == 0) {
+					pFlag = !pFlag;
+					System.out.println(nums[j] + "은(는) 소수가 아닙니다.");
+					break;
+				}
+			}
+			if (pFlag) {
+				System.out.println(nums[j]+ "은(는) 소수 입니다.");
+			}
+		}
+		
+	}
+
+}
+
+정수 배열 100개 선언하고 임의의 정수 배열에 넣고
+
+
