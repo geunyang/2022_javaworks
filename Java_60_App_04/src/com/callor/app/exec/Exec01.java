@@ -1,5 +1,8 @@
 package com.callor.app.exec;
 
+/*
+ * 해당 프로젝트가 시험범위
+ */
 public class Exec01 {
 	
 	public static void main(String[] args) {
