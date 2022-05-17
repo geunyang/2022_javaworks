@@ -1,8 +1,8 @@
-package com.callor.app.controller;
+package com.callor.app.exec;
 
 import com.callor.app.model.AddressVO;
 // 이름수정필요
-public class Controller {
+public class AddrEx01 {
 	public static void main(String[] args) {
 		
 		// AddressVO로 완전히 독립된 3개의 객체 생성

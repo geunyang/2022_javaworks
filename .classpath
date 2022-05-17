@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Java_20_Control_01/src/|Java_20_Control_05/src/|Java_50_App_04/src/|Java_50_App_08/src/|Java_60_App_03/src/|Java_10_Varriable_05/src/|Java_00_Lib/src/|Java_30_Arrays_02/src/|HelloKorea/src/|Java_40_Classes_02/src/|Java_10_varriable/src/|Java_20_Control_04/src/|java_60_App_01/src/|Java_50_App_03/src/|Java_50_App_07/src/|Java_60_App_02/src/|Java_10_Varriable_04/src/|Java_30_Arrays_03/src/|Java_40_Classes_05/src/|Java_20_Control_03/src/|Java_50_App_02/src/|Java_50_App_06/src/|Java_60_App_05/src/|Java_10_Varriable_03/src/|Java_00_Hello/src/|Java_40_Classes/src/|Java_30_Arrays_04/src/|Java_40_Classes_04/src/|Java_20_Control_02/src/|Java_20_Control_06/src/|HelloJava/src/|Java_50_App_01/src/|Java_50_App_05/src/|Java_60_App_04/src/|Java_10_Varriable_02/src/|Java_10_Varriable_06/src/|Java_60_App_03_Todo/src/|Java_30_Arrays_01/src/|Java_30_Arrays_05/src/|Java_40_Classes_03/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="HelloJava/src"/>
+	<classpathentry kind="src" path="HelloKorea/src"/>
+	<classpathentry kind="src" path="Java_00_Hello/src"/>
+	<classpathentry kind="src" path="Java_00_Lib/src"/>
+	<classpathentry kind="src" path="Java_10_Varriable_02/src"/>
+	<classpathentry kind="src" path="Java_10_Varriable_03/src"/>
+	<classpathentry kind="src" path="Java_10_Varriable_04/src"/>
+	<classpathentry kind="src" path="Java_10_Varriable_05/src"/>
+	<classpathentry kind="src" path="Java_10_Varriable_06/src"/>
+	<classpathentry kind="src" path="Java_10_varriable/src"/>
+	<classpathentry kind="src" path="Java_20_Control_01/src"/>
+	<classpathentry kind="src" path="Java_20_Control_02/src"/>
+	<classpathentry kind="src" path="Java_20_Control_03/src"/>
+	<classpathentry kind="src" path="Java_20_Control_04/src"/>
+	<classpathentry kind="src" path="Java_20_Control_05/src"/>
+	<classpathentry kind="src" path="Java_20_Control_06/src"/>
+	<classpathentry kind="src" path="Java_30_Arrays_01/src"/>
+	<classpathentry kind="src" path="Java_30_Arrays_02/src"/>
+	<classpathentry kind="src" path="Java_30_Arrays_03/src"/>
+	<classpathentry kind="src" path="Java_30_Arrays_04/src"/>
+	<classpathentry kind="src" path="Java_30_Arrays_05/src"/>
+	<classpathentry kind="src" path="Java_40_Classes_02/src"/>
+	<classpathentry kind="src" path="Java_40_Classes_03/src"/>
+	<classpathentry kind="src" path="Java_40_Classes_04/src"/>
+	<classpathentry kind="src" path="Java_40_Classes_05/src"/>
+	<classpathentry kind="src" path="Java_40_Classes/src"/>
+	<classpathentry kind="src" path="Java_50_App_01/src"/>
+	<classpathentry kind="src" path="Java_50_App_02/src"/>
+	<classpathentry kind="src" path="Java_50_App_03/src"/>
+	<classpathentry kind="src" path="Java_50_App_04/src"/>
+	<classpathentry kind="src" path="Java_50_App_05/src"/>
+	<classpathentry kind="src" path="Java_50_App_06/src"/>
+	<classpathentry kind="src" path="Java_50_App_07/src"/>
+	<classpathentry kind="src" path="Java_50_App_08/src"/>
+	<classpathentry kind="src" path="java_60_App_01/src"/>
+	<classpathentry kind="src" path="Java_60_App_02/src"/>
+	<classpathentry kind="src" path="Java_60_App_03_Todo/src"/>
+	<classpathentry kind="src" path="Java_60_App_03/src"/>
+	<classpathentry kind="src" path="Java_60_App_04/src"/>
+	<classpathentry kind="src" path="Java_60_App_05/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -6,7 +6,6 @@ import java.util.List;
 
 import com.callor.app.model.AddressVO;
 import com.callor.app.service.AddrServiceV1;
-import com.callor.utils.Line;
 
 public class AddrEx05 {
 	
@@ -51,7 +50,7 @@ public class AddrEx05 {
 		AddrServiceV1 adService = new AddrServiceV1();
 		// 3명의 데이터 출력하기
 		adService.printAddrList(addrs);
-		System.out.println(Line.dLine(100));
+		System.out.println("=".repeat(100));
 		adVO = AddressVO.builder()
 				.name("임꺽정")
 				.tel("010-4444-4444")
@@ -63,7 +62,22 @@ public class AddrEx05 {
 		// 오늘 과제
 		addrs.set(2, adVO);
 		adService.printAddrList(addrs);
-		Collections.sort(null);
+		int size = addrs.size();
+		for (int i = 0; i < size; i++) {
+			for (int j = i + 1; j < size; j++) {
+				if (addrs.get(i).getAge() > addrs.get(j).getAge()) {
+					AddressVO sVO = addrs.get(i);
+					addrs.set(i, addrs.get(j));
+					addrs.set(j, sVO);
+				}
+			}
+		}
+		System.out.println("=".repeat(100));
+		
+
+		adService.printAddrList(addrs);
+		
  	}
+	
 
 }
